@@ -41,12 +41,12 @@ a {
 }
 `
 
-
 export const UserCard = (props) => {
     const users = props.user
     const followers = props.follower
     // console.log(followers);
-    return (
+    
+    return (    
         <CardsStyle className="cards">
         <UserStyle className="usercard">
 <img src={users.avatar_url} alt="mary's profile"/>
