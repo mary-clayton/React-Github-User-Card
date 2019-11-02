@@ -4,11 +4,15 @@ import styled from 'styled-components';
 const FormStyle = styled.div `
 background: #505050; 
 height: 100px;
+h1 {
+    font-family: Lato;
+    font-weight: bold;
+}
 form {
 display: flex;
-justify-content: flex-end;
+justify-content: space-between;
 align-items: center;
-padding: 2%;
+padding: 1%;
 color: white;
 }
 label {
@@ -55,6 +59,7 @@ class SearchComponent extends Component{
         return(
             <FormStyle className="search-bar">
                 <form>
+                <h1>Github Followers</h1>
                 <form className="search-form" onSubmit={this.handleSubmit}>
                     <input type="text" name="search" placeholder="search for user's followers" onChange={this.handleChange}/>
                     <button><i className="fas fa-search fa-2x"></i></button>
